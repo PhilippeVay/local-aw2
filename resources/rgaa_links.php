@@ -198,9 +198,9 @@ function linkRgaa($matches) {
 
 	return $matches[1].'<a href="'.$rgaa[$matches[2]].'">'.$matches[2].'</a>';
 }
+
+// HTML code really beginning with body opening tag because of JS escaped characters not kept by PHP treatment... (do not copy head element, it lacks 2 script elements)
 $from = <<<AWW
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
@@ -229,83 +229,6 @@ $from = <<<AWW
 <link rel="alternate" href="actualites.xml" type="application/rss+xml" title="Actualit&eacute;s AccessiWeb" />
 <link rel="alternate" href="formations.xml" type="application/rss+xml" title="Formations" />
 
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-
-sfHover = function() {
-	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
-	for (var i=0; i<sfEls.length; i++) {
-		sfEls[i].onmouseover=function() {
-			this.className+=(this.className.length>0? " ": "") + "sfhover";
-		}
-		sfEls[i].onmouseout=function() {
-			this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
-		}
-	}
-}
-mcAccessible = function() {
-	var mcEls = document.getElementById("nav").getElementsByTagName("A");
-	for (var i=0; i<mcEls.length; i++) {
-		mcEls[i].onfocus=function() {
-			this.className+=(this.className.length>0? " ": "") + "sffocus"; //a:focus
-			this.parentNode.className+=(this.parentNode.className.length>0? " ": "") + "sfhover"; //li < a:focus
-			if(this.parentNode.parentNode.parentNode.nodeName == "LI") {
-				this.parentNode.parentNode.parentNode.className+=(this.parentNode.parentNode.parentNode.className.length>0? " ": "") + "sfhover"; //li < ul < li < a:focus
-				if(this.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "LI") {
-					this.parentNode.parentNode.parentNode.parentNode.parentNode.className+=(this.parentNode.parentNode.parentNode.parentNode.parentNode.className.length>0? " ": "") + "sfhover"; //li < ul < li < ul < li < a:focus
-				}
-			}
-		}
-		mcEls[i].onblur=function() {
-			this.className=this.className.replace(new RegExp("( ?|^)sffocus\\b"), "");
-			this.parentNode.className=this.parentNode.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
-			if(this.parentNode.parentNode.parentNode.nodeName == "LI") {
-				this.parentNode.parentNode.parentNode.className=this.parentNode.parentNode.parentNode.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
-				if(this.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "LI") {
-					this.parentNode.parentNode.parentNode.parentNode.parentNode.className=this.parentNode.parentNode.parentNode.parentNode.parentNode.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
-				}
-			}
-		}
-	}
-}
-
-// only ie needs the sfHover script. all need the accessibility script...
-// thanks http://www.brothercake.com/site/resources/scripts/onload/
-if(window.addEventListener) window.addEventListener('load', mcAccessible, false); // gecko, safari, konqueror and standard
-else if(document.addEventListener) document.addEventListener('load', mcAccessible, false); // opera 7
-else if(window.attachEvent) { // win/ie
-	window.attachEvent('onload', sfHover);
-	window.attachEvent('onload', mcAccessible);
-} else { // mac/ie5
-	if(typeof window.onload == 'function') {
-		var existing = onload;
-		window.onload = function() {
-			existing();
-			sfHover();
-			mcAccessible();
-		}
-	} else {
-		window.onload = function() {
-			sfHover();
-			mcAccessible();
-		}
-	}
-}
-
-//--><!]]></script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-11256295-13']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </head>
 
