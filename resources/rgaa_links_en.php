@@ -6,6 +6,14 @@
 // Then in AW2.2 file, search will be:
 //		[-|: ] [0-9]+\.[0-9]+
 
+function techsLine($line) {
+	$baseUrl = 'http://www.w3.org/TR/WCAG20-TECHS/';
+	$lineWithTechsLinks = preg_replace('/([A-Z]+[0-9]+)/', '<a href="'.$baseUrl.'$1.html">$1</a>', $line);
+//return '<a href="#">'.$lineWithTechsLinks[0].'</a>'.$line[3]
+	return $lineWithTechsLinks[0].$line[3];
+	//return $lineWithTechsLinks;
+}
+
 function rgaaLine($line) {
 	$lineWithRgaaLinks = preg_replace_callback('/([0-9]+\.[0-9]+)/', 'linkRgaa', $line[3]);
 
@@ -2871,4 +2879,8 @@ AWW;
 
 $withRgaaLinks = preg_replace_callback('#(RGAA<\/abbr> test[s]?)(<\/strong>:)(.*)(</li>)#', 'rgaaLine', $from);
 
-echo $withRgaaLinks;
+// "failure(s)</strong>: H67 - G196 - F39 - F38</li> <li><strong><abbr>RGAA"
+$withTechsLinks = preg_replace_callback('#(failure\(s\)<\/strong>:)(.*)(</li>)#', 'techsLine', $withRgaaLinks);
+
+
+echo $withTechsLinks;
