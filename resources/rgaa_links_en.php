@@ -6,14 +6,6 @@
 // Then in AW2.2 file, search will be:
 //		[-|: ] [0-9]+\.[0-9]+
 
-function techsLine($line) {
-	$baseUrl = 'http://www.w3.org/TR/WCAG20-TECHS/';
-	$lineWithTechsLinks = preg_replace('/([A-Z]+[0-9]+)/', '<a href="'.$baseUrl.'$1.html">$1</a>', $line);
-//return '<a href="#">'.$lineWithTechsLinks[0].'</a>'.$line[3]
-	return $lineWithTechsLinks[0].$line[3];
-	//return $lineWithTechsLinks;
-}
-
 function rgaaLine($line) {
 	$lineWithRgaaLinks = preg_replace_callback('/([0-9]+\.[0-9]+)/', 'linkRgaa', $line[3]);
 
@@ -216,6 +208,87 @@ function linkRgaa($matches) {
 	//return $matches[1];
 	return '<a href="'.$rgaa[$matches[1]].'" lang="fr" hreflang="fr">'.$matches[1].'</a>';
 }
+
+function techsLine($line) {
+	$baseUrl = 'http://www.w3.org/TR/WCAG20-TECHS/';
+	$lineWithTechsLinks = preg_replace('/([A-Z]+[0-9]+)/', '<a href="'.$baseUrl.'$1.html">$1</a>', $line);
+
+	return $lineWithTechsLinks[0].$line[3];
+}
+
+function ScLine($line) {
+	$lineWithScLinks = preg_replace_callback('/([0-9]+\.[0-9]+\.[0-9]+)/', 'linkSc', $line);
+	return $lineWithScLinks[0];
+}
+function linkSc($sc) {
+	$baseUrl = 'http://www.w3.org/TR/WCAG20/#';
+	$anchor = Array (
+		'1.1.1' => 'text-equiv-all',
+		'1.2.1' => 'media-equiv-av-only-alt',
+		'1.2.2' => 'media-equiv-captions',
+		'1.2.3' => 'media-equiv-audio-desc',
+		'1.2.4' => 'media-equiv-real-time-captions',
+		'1.2.5' => 'media-equiv-audio-desc-only',
+		'1.2.6' => 'media-equiv-sign',
+		'1.2.7' => 'media-equiv-extended-ad',
+		'1.2.8' => 'media-equiv-text-doc',
+		'1.2.9' => 'media-equiv-live-audio-only',
+		'1.3.1' => 'content-structure-separation-programmatic',
+		'1.3.2' => 'content-structure-separation-sequence',
+		'1.3.3' => 'content-structure-separation-understanding',
+		'1.4.1' => 'visual-audio-contrast-without-color',
+		'1.4.2' => 'visual-audio-contrast-dis-audio',
+		'1.4.3' => 'visual-audio-contrast-contrast',
+		'1.4.4' => 'visual-audio-contrast-scale',
+		'1.4.5' => 'visual-audio-contrast-text-presentation',
+		'1.4.6' => 'visual-audio-contrast7',
+		'1.4.7' => 'visual-audio-contrast-noaudio',
+		'1.4.8' => 'visual-audio-contrast-visual-presentation',
+		'1.4.9' => 'visual-audio-contrast-text-images',
+		'2.1.1' => 'keyboard-operation-keyboard-operable',
+		'2.1.2' => 'keyboard-operation-trapping',
+		'2.1.3' => 'keyboard-operation-all-funcs',
+		'2.2.1' => 'time-limits-required-behaviors',
+		'2.2.2' => 'time-limits-pause',
+		'2.2.3' => 'time-limits-no-exceptions',
+		'2.2.4' => 'time-limits-postponed',
+		'2.2.5' => 'time-limits-server-timeout',
+		'2.3.1' => 'seizure-does-not-violate',
+		'2.3.2' => 'seizure-three-times',
+		'2.4.1' => 'navigation-mechanisms-headings',
+		'2.4.2' => 'navigation-mechanisms-title',
+		'2.4.3' => 'navigation-mechanisms-focus-order',
+		'2.4.4' => 'navigation-mechanisms-refs',
+		'2.4.5' => 'navigation-mechanisms-mult-loc',
+		'2.4.6' => 'navigation-mechanisms-descriptive',
+		'2.4.7' => 'navigation-mechanisms-focus-visible',
+		'2.4.8' => 'navigation-mechanisms-location',
+		'2.4.9' => 'navigation-mechanisms-link',
+		'2.4.10' => 'navigation-mechanisms-headings',
+		'3.1.1' => 'meaning-doc-lang-id',
+		'3.1.2' => 'meaning-other-lang-id',
+		'3.1.3' => 'meaning-idioms',
+		'3.1.4' => 'meaning-located',
+		'3.1.5' => 'meaning-supplements',
+		'3.1.6' => 'meaning-pronunciation',
+		'3.2.1' => 'consistent-behavior-receive-focus',
+		'3.2.2' => 'consistent-behavior-unpredictable-change',
+		'3.2.3' => 'consistent-behavior-consistent-locations',
+		'3.2.4' => 'consistent-behavior-consistent-functionality',
+		'3.2.5' => 'consistent-behavior-no-extreme-changes-context',
+		'3.3.1' => 'minimize-error-identified',
+		'3.3.2' => 'minimize-error-cues',
+		'3.3.3' => 'minimize-error-suggestions',
+		'3.3.4' => 'minimize-error-reversible',
+		'3.3.5' => 'minimize-error-context-help',
+		'3.3.6' => 'minimize-error-reversible-all',
+		'4.1.1' => 'ensure-compat-parses',
+		'4.1.2' => 'ensure-compat-rsv'
+	);
+
+	return '<a href="'.$baseUrl.$anchor[$sc[0]].'">'.$sc[0].'</a>';
+}
+
 
 // HTML code really beginning with body opening tag because of JS escaped characters not kept by PHP treatment... (do not copy head element, it lacks 2 script elements)
 $from = <<<AWW
@@ -2882,5 +2955,7 @@ $withRgaaLinks = preg_replace_callback('#(RGAA<\/abbr> test[s]?)(<\/strong>:)(.*
 // "failure(s)</strong>: H67 - G196 - F39 - F38</li> <li><strong><abbr>RGAA"
 $withTechsLinks = preg_replace_callback('#(failure\(s\)<\/strong>:)(.*)(</li>)#', 'techsLine', $withRgaaLinks);
 
+// success criterion</strong>: 1.1.1 - 2.4.4 - 2.4.9</li>
+$withScLinks = preg_replace_callback('#(success criteri(?:a|on)?<\/strong>:)(.*)(</li>)#', 'ScLine', $withTechsLinks);
 
-echo $withTechsLinks;
+echo $withScLinks;
