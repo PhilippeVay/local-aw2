@@ -13,7 +13,7 @@ Permission de copier, et distribuer les contenus de ce document ou du document d
 
 *    le lien (Référentiel AccessiWeb avec l'URL suivante vers le document original : http://www.accessiweb.org/index.php/accessiweb_2.2_liste_generale.html.
 *    la notice de droit d'auteur pré-existante du document original ou, si elle n'existe pas, la notice (un lien hypertexte est préférable mais une représentation textuelle est permise) "Copyright © 2012 Association BrailleNet. Tous droits Réservés."
- *   le statut du document. 
+*    le statut du document. 
 
 Si l'espace est suffisant, l'inclusion du texte intégral de cette notice doit être faite. Nous demandons que la référence au nom de l'auteur (association BrailleNet) soit inscrite pour chaque logiciel, document, ou autre article ou produit que vous créerez à partir de l'implémentation des contenus de ce document ou de toute portion de celui-ci.
 
