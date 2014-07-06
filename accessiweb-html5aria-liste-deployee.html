@@ -266,20 +266,20 @@ else if(window.attachEvent) { // win/ie
 d'information, l'alternative textuelle entre object et /object est-elle 
 vide ?</li>
 		<li id="test-1-2-4">Test 1.2.4 :  Chaque image vectorielle de 
-décoration (élément svg) non porteuse d'information et possédant une 
+décoration (élément <code>svg</code>) non porteuse d'information et possédant une 
 alternative vérifie-t-elle ces conditions ?
 		  <ul class="ssTests">
-		    <li>L'élément svg ou l'un de ses enfants est dépourvu de role, 
+		    <li>L'élément <code>svg</code> ou l'un de ses enfants est dépourvu de role, 
 propriété ou état ARIA visant à labelliser l'image vectorielle 
-(aria-label, aria-describedby, aria-labelledby par exemple).</li>
-			<li>Les éléments <code>title</code> et desc sont absents ou vides</li>
-			<li>L'élément svg ou l'un de ses enfants est dépourvu d'attribut <code>title</code></li>
+(<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple).</li>
+			<li>Les éléments <code>title</code> et <code>desc</code> sont absents ou vides</li>
+			<li>L'élément <code>svg</code> ou l'un de ses enfants est dépourvu d'attribut <code>title</code></li>
 		  </ul>
 		  </li>
 
 		<li id="test-1-2-5">Test 1.2.5 :  Pour chaque image bitmap de 
-décoration (élément canvas), le contenu entre &lt;canvas&gt; et 
-&lt;/canvas&gt; doit-être dépourvu de contenus textuels, cette règle 
+décoration (élément <code>canvas</code>), le contenu entre <code>&lt;canvas&gt;</code> et 
+<code>&lt;/canvas&gt;</code> doit-être dépourvu de contenus textuels, cette règle 
 est-elle respectée ?</li>
  </ul>
  <p>Note technique : <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#nT1-2">Consulter la note technique</a></p>
@@ -335,28 +335,28 @@ alternative pertinente.</li>
  </li>
 
  <li id="test-1-3-6">Test 1.3.6 : Chaque image vectorielle porteuse 
-d'information (élément svg) et possédant une alternative vérifie-t-elle 
+d'information (élément <code>svg</code>) et possédant une alternative vérifie-t-elle 
 une de  ces conditions (hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?
    <ul class="ssTests">
-     <li>L'élément svg possède un attribut aria-label dont le contenu est pertinent et identique à l'attribut <code>title</code> s'il est présent</li>
-	 <li>L'élément svg possède un élément desc dont le contenu est 
-pertinent et identique à l'attribut <code>title</code> de l'élément svg s'il est 
+     <li>L'élément <code>svg</code> possède un attribut <code>aria-label</code> dont le contenu est pertinent et identique à l'attribut <code>title</code> s'il est présent</li>
+	 <li>L'élément <code>svg</code> possède un élément <code>desc</code> dont le contenu est 
+pertinent et identique à l'attribut <code>title</code> de l'élément <code>svg</code> s'il est 
 présent</li>
 	 <li>Un lien adjacent permet d'accéder à une alternative dont le 
-contenu est pertinent et identique à l'attribut <code>title</code> de l'élément svg 
+contenu est pertinent et identique à l'attribut <code>title</code> de l'élément <code>svg</code> 
 s'il est présent</li>
    </ul>
  </li>
 
  <li id="test-1-3-7">Test 1.3.7 :  Pour chaque image vectorielle 
-porteuse d'information (élément svg) et possédant une alternative, cette 
+porteuse d'information (élément <code>svg</code>) et possédant une alternative, cette 
 alternative est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
  <li id="test-1-3-8">Test 1.3.8 : Pour chaque image bitmap porteuse 
-d'information (élément canvas) et possédant une alternative (contenu 
-entre &lt;canvas&gt; et &lt;/canvas&gt;), cette alternative est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
+d'information (élément <code>canvas</code>) et possédant une alternative (contenu 
+entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>), cette alternative est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
  <li id="test-1-3-9">Test 1.3.9 : Pour chaque image bitmap porteuse 
-d'information (élément canvas) et possédant une alternative (contenu 
-entre &lt;canvas&gt; et &lt;/canvas&gt;), cette alternative est-elle 
+d'information (élément <code>canvas</code>) et possédant une alternative (contenu 
+entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>), cette alternative est-elle 
 pertinente ?</li>
  <li id="test-1-3-10">Test 1.3.10 : Pour chaque image porteuse 
 d'information et ayant une alternative textuelle, l'alternative 
@@ -401,21 +401,21 @@ textuelle est-elle courte et concise (hors <a href="index.php/glossaire-du-refer
 
 		<li id="test-1-4-5">Test 1.4.5 : Pour chaque image embarquée (élément embed avec l'attribut type="image/...") utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>, et ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mAltTexteImg">alternative textuelle</a>, l'<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mAltTexteImg">alternative textuelle</a> permet-elle d'identifier la nature et la fonction de l'image ?</li>
 
-		<li id="test-1-4-6">Test 1.4.6 : Chaque image vectorielle (élément svg) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a> et ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mAltTexteImg">alternative textuelle</a> via l'attribut aria-label ou l'élément desc vérifie-t-elle ces conditions ?
+		<li id="test-1-4-6">Test 1.4.6 : Chaque image vectorielle (élément <code>svg</code>) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a> et ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mAltTexteImg">alternative textuelle</a> via l'attribut <code>aria-label</code> ou l'élément <code>desc</code> vérifie-t-elle ces conditions ?
 		  <ul class="ssTests">
-		    <li>l'alternative textuelle  implémentée via l'attribut aria-label
+		    <li>l'alternative textuelle  implémentée via l'attribut <code>aria-label</code>
  permet d'identifier la nature et la fonction de l'image et est 
 identique à l'attribut <code>title</code> s'il est présent</li>
-			<li>l'alternative textuelle  implémentée via l'élément desc  permet 
+			<li>l'alternative textuelle  implémentée via l'élément <code>desc</code>  permet 
 d'identifier la nature et la fonction de l'image et est identique à 
-l'attribut <code>title</code> de l'élément svg s'il est présent</li>
+l'attribut <code>title</code> de l'élément <code>svg</code> s'il est présent</li>
 		  </ul>
 		</li>
-        <li id="test-1-4-7">Test 1.4.7 : Pour chaque image vectorielle (élément svg)   utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
-		<li id="test-1-4-8">Test 1.4.8 : Pour chaque image bitmap (élément canvas)  utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a>
+        <li id="test-1-4-7">Test 1.4.7 : Pour chaque image vectorielle (élément <code>svg</code>)   utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
+		<li id="test-1-4-8">Test 1.4.8 : Pour chaque image bitmap (élément <code>canvas</code>)  utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a>
  ou comme image-test et ayant une alternative textuelle, l'alternative 
 textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
-		<li id="test-1-4-9">Test 1.4.9 : Pour chaque image bitmap (élément canvas)  utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
+		<li id="test-1-4-9">Test 1.4.9 : Pour chaque image bitmap (élément <code>canvas</code>)  utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
  </ul>
  <h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
  <ul class="correspondance">
@@ -428,7 +428,7 @@ textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
 
 <h3 id="crit-1-5">Critère 1.5 [A] Pour chaque image utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a>, une solution d'accès alternatif au contenu ou à la fonction du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> est-elle présente ?</h3>
 <ul class="tests">
-		<li id="test-1-5-1">Test 1.5.1 : Chaque image (éléments <code>img</code>, area, applet, object, embed, svg, canvas) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> vérifie-t-elle une de ces conditions ?
+		<li id="test-1-5-1">Test 1.5.1 : Chaque image (éléments <code>img</code>, area, applet, object, embed, <code>svg</code>, <code>canvas</code>) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> vérifie-t-elle une de ces conditions ?
 				<ul class="ssTests">
 
 					<li>Il existe  une autre forme de <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> non graphique, au moins</li>
@@ -503,25 +503,25 @@ textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
 	</ul>
 	</li>
 
-<li id="test-1-6-5"> Test 1.6.5 : Chaque image vectorielle (élément svg)  qui nécessite une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle ces conditions ?
+<li id="test-1-6-5"> Test 1.6.5 : Chaque image vectorielle (élément <code>svg</code>)  qui nécessite une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle ces conditions ?
   <ul class="ssTests">
 
-					<li>Il existe un attribut aria-label contenant une référence à une description détaillée adjacente à l'image vectorielle</li>
+					<li>Il existe un attribut <code>aria-label</code> contenant une référence à une description détaillée adjacente à l'image vectorielle</li>
 
-  				    <li>Il existe un élément desc contenant une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente à l'image vectorielle</li>
-					<li>Il existe un élément desc contenant la <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> </li>
+  				    <li>Il existe un élément <code>desc</code> contenant une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente à l'image vectorielle</li>
+					<li>Il existe un élément <code>desc</code> contenant la <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> </li>
 					<li>Il existe un lien adjacent (via une url ou une ancre) permettant d'accéder au contenu de la <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> </li>
 
 	</ul>
-</li><li id="test-1-6-6">Test 1.6.6: Pour chaque image vectorielle (élément svg)  qui implémente une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente via un attribut aria-label ou un élément desc, cette référence  est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
-<li id="test-1-6-7">Test 1.6.7: Chaque image bitmap (élément canvas) qui nécessite une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
+</li><li id="test-1-6-6">Test 1.6.6: Pour chaque image vectorielle (élément <code>svg</code>)  qui implémente une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente via un attribut <code>aria-label</code> ou un élément <code>desc</code>, cette référence  est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
+<li id="test-1-6-7">Test 1.6.7: Chaque image bitmap (élément <code>canvas</code>) qui nécessite une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
   <ul class="ssTests">
-    <li>Il existe un passage de texte entre &lt;canvas&gt; et &lt;/canvas&gt; contenant une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente à l'image bitmap</li>
-	<li>Il existe un contenu textuel entre &lt;canvas&gt; et &lt;/canvas&gt; faisant office de <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a>.</li>
+    <li>Il existe un passage de texte entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> contenant une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente à l'image bitmap</li>
+	<li>Il existe un contenu textuel entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> faisant office de <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a>.</li>
 	<li>Il existe un lien adjacent (via une url ou une ancre) permettant d'accéder au contenu de la <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a></li>
   </ul>
 </li>
-<li>Test 1.6.8: Pour chaque image bitmap (élément canvas) qui implémente une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente, cette référence est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
+<li>Test 1.6.8: Pour chaque image bitmap (élément <code>canvas</code>) qui implémente une référence à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente, cette référence est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
 	
  </ul>
 <p>Note technique : <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#nT1-6">Consulter la note technique</a></p>
@@ -567,30 +567,30 @@ textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
 
 	 </ul>
 </li>
- <li id="test-1-7-4">Test 1.7.4 : image vectorielle (élément svg) ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
+ <li id="test-1-7-4">Test 1.7.4 : image vectorielle (élément <code>svg</code>) ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
    <ul class="ssTests">
 
 					<li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> adjacente à l'image vectorielle est pertinente</li>
 
-   				<li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> contenu dans l'élément desc est pertinente</li>
+   				<li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> contenu dans l'élément <code>desc</code> est pertinente</li>
 
   				<li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> via un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienAdj">lien adjacent</a> est pertinente</li>
 
 	</ul>
 </li>
 <li id="test-1-7-5">Test 1.7.5: Pour chaque image vectorielle (élément 
-svg)  ayant une description détaillée implémentée via desc, cette 
+<code>svg</code>)  ayant une description détaillée implémentée via <code>desc</code>, cette 
 description détaillée  est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
-<li id="test-1-7-6">Test 1.7.6: Chaque image bitmap (élément canvas) ayant une description détaillée vérifie-t-elle une de ces conditions ?
+<li id="test-1-7-6">Test 1.7.6: Chaque image bitmap (élément <code>canvas</code>) ayant une description détaillée vérifie-t-elle une de ces conditions ?
   <ul class="ssTests">
     <li>La description détaillée adjacente à l'image bitmap est pertinente</li>
-	<li>La description détaillée contenu entre &lt;canvas&gt; et &lt;/canvas&gt; est pertinente</li>
+	<li>La description détaillée contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> est pertinente</li>
 	<li>La description détaillée via un lien adjacent est pertinente</li>
   </ul>
 </li>
 <li id="test-1-7-7"> Test 1.7.7: Pour chaque image bitmap (élément 
-canvas) ayant une description détaillée entre &lt;canvas&gt; et 
-&lt;/canvas&gt;, cette description détaillée est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
+<code>canvas</code>) ayant une description détaillée entre <code>&lt;canvas&gt;</code> et 
+<code>&lt;/canvas&gt;</code>, cette description détaillée est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
  </ul>
  <h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
 
@@ -615,7 +615,7 @@ l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.
 <li id="test-1-8-4"> Test 1.8.4 : Chaque image texte objet (élément object avec l'attribut type="image/..."), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
 <li id="test-1-8-5"> Test 1.8.5 : Chaque image texte embarquée (élément embed avec l'attribut type="image/..."), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
 
-<li id="test-1-8-6"> Test 1.8.6 : Chaque image texte bitmap (élément canvas), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>.  Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
+<li id="test-1-8-6"> Test 1.8.6 : Chaque image texte bitmap (élément <code>canvas</code>), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>.  Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
  </ul>
    <p>Note technique : <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#nT1-8">Consulter la note technique</a>
  </p><h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
@@ -644,7 +644,7 @@ si possible être remplacé par du <a href="index.php/glossaire-du-referentiel-a
 <li id="test-1-9-5"> Test 1.9.5 : Chaque image texte embarquée (élément 
 embed avec l'attribut type="image/...") doit si possible être remplacée 
 par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</li>
-<li id="test-1-9-6"> Test 1.9.6 : Chaque image texte bitmap (élément canvas) doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</li>
+<li id="test-1-9-6"> Test 1.9.6 : Chaque image texte bitmap (élément <code>canvas</code>) doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</li>
  </ul>
   <p>Note technique : <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#nT1-8">Consulter la note technique</a>
 	</p><h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
@@ -687,24 +687,24 @@ nécessaire, ces conditions ?
      <li>L'attribut <code>title</code> de l'image s'il est  présent, est strictement identique au contenu de l'attribut alt</li>
   </ul>
  </li><li id="test-1-10-4">Test 1.10.4 : Chaque image vectorielle 
-légendée (élément svg associé à une légende adjacente) vérifie-telle, si
+légendée (élément <code>svg</code> associé à une légende adjacente) vérifie-telle, si
  nécessaire, ces conditions ?
   <ul class="ssTests">
-    <li>L'image (élément svg) et sa légende sont contenues dans un élément figure</li>
+    <li>L'image (élément <code>svg</code>) et sa légende sont contenues dans un élément figure</li>
     <li>L'élément figure possède un attribut role="group"</li>
-    <li>Le contenu de l'attribut aria-label ou de l'élément desc de l'image vectorielle contient une référence à la légende adjacente</li>
-    <li>L'attribut <code>title</code> de l'image vectorielle (élément svg) s'il est  
-présent, est strictement identique au contenu de l'attribut aria-label 
-ou de l'élément desc utilisé comme alternative.</li>
+    <li>Le contenu de l'attribut <code>aria-label</code> ou de l'élément <code>desc</code> de l'image vectorielle contient une référence à la légende adjacente</li>
+    <li>L'attribut <code>title</code> de l'image vectorielle (élément <code>svg</code>) s'il est  
+présent, est strictement identique au contenu de l'attribut <code>aria-label</code> 
+ou de l'élément <code>desc</code> utilisé comme alternative.</li>
   </ul>
  </li>
  <li id="test-1-10-5">Test 1.10.5 : Chaque image bitmap légendée (élément
- canvas  associé à une légende adjacente) vérifie-telle, si nécessaire,
+ <code>canvas</code>  associé à une légende adjacente) vérifie-telle, si nécessaire,
  ces conditions ?
    <ul class="ssTests">
-     <li>L'image (élément canvas) et sa légende sont contenues dans un élément figure</li>
+     <li>L'image (élément <code>canvas</code>) et sa légende sont contenues dans un élément figure</li>
 	 <li>L'élément figure possède un attribut role="group"</li>
-	 <li>Le contenu entre &lt;canvas&gt; et &lt;/canvas&gt;  de l'image bitmap contient une référence à la légende adjacente</li>
+	 <li>Le contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>  de l'image bitmap contient une référence à la légende adjacente</li>
    </ul>
  </li>
  
@@ -1416,7 +1416,7 @@ Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.htm
 
 <ul class="tests">
 		<li id="test-4-18-1"> Test 4.18.1 : Chaque séquence sonore déclenchée 
-automatiquement via un élément object,video, audio, embed, un code 
+automatiquement via un élément object,<code>video</code>, <code>audio</code>, embed, un code 
 javascript ou une propriété bgsound vérifie-t-il une de ces conditions  ?
     <ul class="ssTests">
 					<li> La séquence sonore a une durée inférieure ou égale à 3 secondes</li>
@@ -1441,7 +1441,7 @@ javascript ou une propriété bgsound vérifie-t-il une de ces conditions  ?
 
 <ul class="tests">
 		<li id="test-4-19-1"> Test 4.19.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMediaTemp">média temporel</a>
- audio pré-enregistré et diffusé via un élément object, video, audio, 
+ audio pré-enregistré et diffusé via un élément object, <code>video</code>, <code>audio</code>, 
 embed ou proposé en téléchargement vérifie-t-il une de ces conditions (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit4-19" title="Cas particuliers pour le critère 4.19">hors cas particuliers</a>) ?
   <ul class="ssTests">
 
@@ -2341,14 +2341,14 @@ présentation, que les changements de langues et  de direction de sens de
 <h3 id="crit-9-1">Critère 9.1 [A]
 Dans chaque page Web, l'information est-elle structurée par l'utilisation appropriée de <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titres</a> ?</h3>
 <ul class="tests">
-		<li id="test-9-1-1">	Test 9.1.1  : Dans chaque page Web, y a-t-il un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titre</a> de niveau 1 (élément h1 ou élément possédant un role ARIA "heading" associé à une propriété aria-level="1") ?</li>
+		<li id="test-9-1-1">	Test 9.1.1  : Dans chaque page Web, y a-t-il un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titre</a> de niveau 1 (élément h1 ou élément possédant un role ARIA "heading" associé à une propriété <code>aria-level="1"</code>) ?</li>
 
-		<li id="test-9-1-2">	Test 9.1.2  : Dans chaque page Web, la hiérarchie entre les <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titres</a> (éléments h ou élément possédant un role ARIA "heading" associé à une propriété aria-level) est-elle pertinente ?</li>
+		<li id="test-9-1-2">	Test 9.1.2  : Dans chaque page Web, la hiérarchie entre les <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titres</a> (éléments h ou élément possédant un role ARIA "heading" associé à une propriété <code>aria-level</code>) est-elle pertinente ?</li>
 		<li id="test-9-1-3">	Test 9.1.3  : Dans chaque page Web, chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titre</a>
  (élément h ou élément possédant un role ARIA "heading" associé à une 
-propriété aria-level) nécessaire à la structure de l'information est-il 
+propriété <code>aria-level</code>) nécessaire à la structure de l'information est-il 
 présent ?</li>
-		<li id="test-9-1-4">	Test 9.1.4  : Dans chaque page Web, chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titre</a> (élément h ou élément possédant un role ARIA "heading" associé à une propriété aria-level) est-il pertinent ?</li>
+		<li id="test-9-1-4">	Test 9.1.4  : Dans chaque page Web, chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitre">titre</a> (élément h ou élément possédant un role ARIA "heading" associé à une propriété <code>aria-level</code>) est-il pertinent ?</li>
 
 </ul>
 <p>Note technique : <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#nT9-1">Consulter la note technique</a></p>
@@ -2825,10 +2825,10 @@ plein écran</li>
 
 	</ul>
 	</li>
-<li>Test 10.13.2 : Dans chaque page Web, chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteCache">texte caché</a> qui utilise une propriété ARIA aria-hidden vérifie-t-il une de ces conditions ? 
+<li>Test 10.13.2 : Dans chaque page Web, chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteCache">texte caché</a> qui utilise une propriété ARIA <code>aria-hidden</code> vérifie-t-il une de ces conditions ? 
   <ul class="ssTests">
     <li>Le texte n'a pas vocation à être restitué par les technologies d'assistance</li>
-	<li>La valeur de la propriété ARIA aria-hidden est cohérente avec l'état visible ou caché du texte</li>
+	<li>La valeur de la propriété ARIA <code>aria-hidden</code> est cohérente avec l'état visible ou caché du texte</li>
   </ul>
 </li>
 
@@ -2953,8 +2953,8 @@ Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCh
 
 		  <li> Le champ de formulaire possède un attribut <code>title</code></li>
           <li> Une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> (élément label) est associée au champ de formulaire</li>
-	      <li>Le <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> possède une propriété aria-label</li>
-		  <li>Le <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> possède un attribut aria-labelledby référençant un passage de texte identifié</li>
+	      <li>Le <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> possède une propriété <code>aria-label</code></li>
+		  <li>Le <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> possède un attribut <code>aria-labelledby</code> référençant un passage de texte identifié</li>
 	</ul></li>
 
  		<li id="test-11-1-2">Test 11.1.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a>, associé à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> (élément label), vérifie-t-il ces conditions ?
@@ -2966,14 +2966,14 @@ Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCh
 		  <li> La valeur de l'attribut for est égale à la valeur de l'attribut id du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> associé</li>
  </ul></li>
 
- 		<li id="test-11-1-3">Test 11.1.3 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> associé à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> via la propriété ARIA aria-labelledby, vérifie-t-elle ces conditions ?
+ 		<li id="test-11-1-3">Test 11.1.3 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> associé à une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> via la propriété ARIA <code>aria-labelledby</code>, vérifie-t-elle ces conditions ?
 
 
 
 <ul class="ssTests">
 					<li> l'<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> possède un attribut id</li>
  					<li> La valeur de l'attribut id est unique</li>
-					<li>La valeur de la propriété ARIA aria-labelledby est égale à la valeur de l'attribut id de l'<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a></li>
+					<li>La valeur de la propriété ARIA <code>aria-labelledby</code> est égale à la valeur de l'attribut id de l'<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a></li>
  </ul>
  </li>
  </ul><h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
@@ -2995,8 +2995,8 @@ Chaque étiquette associée à un <a href="index.php/glossaire-du-referentiel-ac
 
 		<li id="test-11-2-1"> Test 11.2.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> (élément label) permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel elle est associée ?</li>
 		<li id="test-11-2-2"> Test 11.2.2 : Chaque attribut <code>title</code> permet-il de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ?
-        </li><li id="test-11-2-3"> Test 11.2.3 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> implémentée via la propriété ARIA aria-label permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ? </li>
-		<li id="test-11-2-4"> Test 11.2.4 :  Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> implémentée via la propriété ARIA aria-labelledby permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ? </li>
+        </li><li id="test-11-2-3"> Test 11.2.3 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> implémentée via la propriété ARIA <code>aria-label</code> permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ? </li>
+		<li id="test-11-2-4"> Test 11.2.4 :  Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> implémentée via la propriété ARIA <code>aria-labelledby</code> permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ? </li>
 
 
 
@@ -3141,15 +3141,15 @@ l'attribut label est-il pertinent ?</li>
 
           <li> Le contenu de l'élément &lt;button&gt; est  pertinent</li>
           <li> Le contenu de l'attribut <code>title</code> est pertinent</li>
-		  <li>Le contenu de la propriété ARIA aria-label est pertinent</li>
+		  <li>Le contenu de la propriété ARIA <code>aria-label</code> est pertinent</li>
    </ul>
 
 </li>
-<li id="test-11-9-2">Test 11.9.2 :&gt; Dans chaque formulaire, l'intitulé de chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mBtnForm">bouton</a> implémenté via une propriété ARIA aria-labelledby vérifie-t-il ces conditions ?
+<li id="test-11-9-2">Test 11.9.2 :&gt; Dans chaque formulaire, l'intitulé de chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mBtnForm">bouton</a> implémenté via une propriété ARIA <code>aria-labelledby</code> vérifie-t-il ces conditions ?
   <ul class="ssTests">
     <li>Le passage de texte servant d'intitulé possède un attribut Id</li>
 	<li>La valeur de l'attribut id est unique</li>
-	<li>La valeur de la propriété ARIA aria-labelledby est égale à la valeur de l'attribut id du passage de texte</li>
+	<li>La valeur de la propriété ARIA <code>aria-labelledby</code> est égale à la valeur de l'attribut id du passage de texte</li>
 	<li>Le passage de texte est pertinent</li>
   </ul>
 </li>
@@ -3175,66 +3175,66 @@ l'attribut label est-il pertinent ?</li>
 		  <ul class="ssTests">
 		    <li>L'indication de champ obligatoire est indiquée par un passage de texte avant le champ de formulaire</li>
 			<li>L'indication de champ obligatoire est indiquée via un attribut required</li>
-			<li>L'indication de champ obligatoire est indiquée via la propriété ARIA aria-required</li>
+			<li>L'indication de champ obligatoire est indiquée via la propriété ARIA <code>aria-required</code></li>
 			<li>L'indication de champ obligatoire est indiquée dans l'étiquette 
-(élément label, attribut <code>title</code>, propriété aria-label, passage de texte 
-lié via la propriété aria-labelledby)  du champ de formulaire</li>
-			<li>L'indication de champ obligatoire est indiquée par un passage de texte lié par la propriété ARIA aria-describedby</li>
+(élément label, attribut <code>title</code>, propriété <code>aria-label</code>, passage de texte 
+lié via la propriété <code>aria-labelledby</code>)  du champ de formulaire</li>
+			<li>L'indication de champ obligatoire est indiquée par un passage de texte lié par la propriété ARIA <code>aria-describedby</code></li>
 		  </ul>
 		</li>
     <li id="test-11-10-2"> Test 11.10.2 : Chaque indication de champ 
-obligatoire qui utilise la propriété ARIA aria-label doit être 
+obligatoire qui utilise la propriété ARIA <code>aria-label</code> doit être 
 accompagnée d'une indication visuelle explicite, cette règle est-elle 
 respectée ?</li>
 
     		<li id="test-11-10-3"> Test 11.10.3 : Chaque indication de champ 
 obligatoire qui utilise un passage de texte lié par la propriété ARIA 
-aria-describedby vérifie-t-elle ces conditions ?
+<code>aria-describedby</code> vérifie-t-elle ces conditions ?
 			  <ul class="ssTests">
 			    <li>Le passage de texte est identifié via un attribut Id</li>
 				<li>La valeur de l'attribut Id est unique</li>
-				<li>La valeur de la propriété ARIA aria-describedby est égale à la valeur de l'attribut Id</li>
+				<li>La valeur de la propriété ARIA <code>aria-describedby</code> est égale à la valeur de l'attribut Id</li>
 			  </ul>
 			</li>
 <li id="test-11-10-4"> Test 11.10.4 : Pour chaque formulaire, les erreurs de saisie vérifient-elle une de ces conditions ?
   <ul class="ssTests">
     <li>L'erreur de saisie est indiquée dans l'étiquette (élément label, 
-attribut <code>title</code>, propriété ARIA aria-label, passage de texte lié via la 
-propriété ARIA aria-labelledby)  du champ de formulaire</li>
+attribut <code>title</code>, propriété ARIA <code>aria-label</code>, passage de texte lié via la 
+propriété ARIA <code>aria-labelledby</code>)  du champ de formulaire</li>
 	<li>L'erreur de saisie est indiquée par un passage de texte avant le champ de formulaire</li>
 	<li>Le champ de formulaire possède un type qui produit de manière automatique un message d'erreur de saisie</li>
-	<li>L'erreur de saisie est indiquée par un passage de texte lié par la propriété ARIA aria-describedby</li>
+	<li>L'erreur de saisie est indiquée par un passage de texte lié par la propriété ARIA <code>aria-describedby</code></li>
   </ul>
 </li>
 <li id="test-11-10-5"> Test 11.10.5 : Chaque erreur de saisie qui 
-utilise la propriété ARIA aria-label doit être accompagnée d'un passage 
+utilise la propriété ARIA <code>aria-label</code> doit être accompagnée d'un passage 
 de texte avant le champ du formulaire, cette règle est-elle respectée ?</li>
 <li id="test-11-10-6"> Test 11.10.6 : Chaque erreur de saisie qui 
-utilise un passage de texte lié par la propriété ARIA aria-describedby 
+utilise un passage de texte lié par la propriété ARIA <code>aria-describedby</code> 
 vérifie-t-elle ces conditions ?
   <ul class="ssTests">
     <li>Le passage de texte est identifié via un attribut Id</li>
 	<li>La valeur de l'attribut Id est unique</li>
-	<li>La valeur de la propriété ARIA aria-describedby est égale à la valeur de l'attribut Id</li>
+	<li>La valeur de la propriété ARIA <code>aria-describedby</code> est égale à la valeur de l'attribut Id</li>
   </ul>
 </li>
 <li id="test-11-10-7"> Test 11.10.7 : Pour chaque formulaire, chaque champ obligatoire vérifie-t-il un de ces conditions ?
   <ul class="ssTests">
     <li>Le  type de donnée et/ou de format  est indiqué, si nécessaire, 
 dans l'étiquette (élément label, attribut <code>title</code>, propriété ARIA 
-aria-label, texte lié via la propriété ARIA aria-labelledby)  du champ 
+<code>aria-label</code>, texte lié via la propriété ARIA <code>aria-labelledby</code>)  du champ 
 de formulaire</li>
 	<li>Le  type de donnée et/ou de format  est indiqué, si nécessaire, par un passage de texte avant le champ de formulaire</li>
-	<li>Le  type de donnée et/ou de format  est indiqué, si nécessaire, par un texte lié par la propriété ARIA aria-describedby</li>
+	<li>Le  type de donnée et/ou de format  est indiqué, si nécessaire, par un texte lié par la propriété ARIA <code>aria-describedby</code></li>
   </ul>
 </li>
 <li id="test-11-10-8">Test 11.10.8 : Chaque indication de type de donnée
  et/ou de format qui utilise un passage de texte lié par la propriété 
-ARIA aria-describedby vérifie-t-elle ces conditions ?
+ARIA <code>aria-describedby</code> vérifie-t-elle ces conditions ?
   <ul class="ssTests">
     <li>Le passage de texte est identifié via un attribut Id</li>
 	<li>La valeur de l'attribut Id est unique</li>
-	<li>La valeur de la propriété ARIA aria-describedby est égale à la valeur de l'attribut Id</li>
+	<li>La valeur de la propriété ARIA <code>aria-describedby</code> est égale à la valeur de l'attribut Id</li>
   </ul>
 </li>
 </ul>
@@ -3348,22 +3348,22 @@ Pour chaque formulaire, toutes les données peuvent-elles être modifiées, mise
 						<li>Il existe des indications avant le formulaire</li>
 						<li>Il existe des indications avant les champs de formulaire</li>
 						<li>Il existe des indications dans l'étiquette (élément label, 
-attribut <code>title</code>, propriété aria-label, passage de texte lié via la 
-propriété aria-labelledby)  du champ de formulaire</li>
-						<li> Il existe des indications dans un passage de texte lié par la propriété ARIA aria-describedby</li>
+attribut <code>title</code>, propriété <code>aria-label</code>, passage de texte lié via la 
+propriété <code>aria-labelledby</code>)  du champ de formulaire</li>
+						<li> Il existe des indications dans un passage de texte lié par la propriété ARIA <code>aria-describedby</code></li>
 						<li>Un assistant est disponible</li>
 </ul>
 </li>
 		<li id="test-11-14-2"> Test 11.14.2 : Chaque indication  qui utilise 
-la propriété ARIA aria-label doit être accompagnée d'une indication 
+la propriété ARIA <code>aria-label</code> doit être accompagnée d'une indication 
 visuelle équivalente explicite, cette règle est-elle respectée ?
 </li>
 <li>Test 11.14.3 : Chaque indication qui utilise un passage de texte lié
- par la propriété ARIA aria-describedby vérifie-t-elle ces conditions ?
+ par la propriété ARIA <code>aria-describedby</code> vérifie-t-elle ces conditions ?
   <ul class="ssTests">
     <li>Le passage de texte est identifié via un attribut Id</li>
 	<li>La valeur de l'attribut Id est unique</li>
-	<li>La valeur de la propriété ARIA aria-describedby est égale à la valeur de l'attribut Id</li>
+	<li>La valeur de la propriété ARIA <code>aria-describedby</code> est égale à la valeur de l'attribut Id</li>
   </ul>
 </li>
 <li> Test 11.14.4 : Chaque champ de type texte vérifie-t-il, si nécessaire, l'une de ces conditions ? 
@@ -3371,20 +3371,20 @@ visuelle équivalente explicite, cette règle est-elle respectée ?
     <li>Un correcteur orthographique est disponible</li>
 	<li>Des suggestions de saisie sont disponibles avant le champ du formulaire</li>
 	<li>Des suggestions de saisie sont disponibles dans l'étiquette 
-((élément label, attribut <code>title</code>, propriété aria-label, passage de texte 
-lié via la propriété aria-labelledby)  du champ de formulaire</li>
-	<li>Des suggestions de saisie sont disponibles dans un passage de texte lié par la propriété ARIA aria-describedby</li>
+((élément label, attribut <code>title</code>, propriété <code>aria-label</code>, passage de texte 
+lié via la propriété <code>aria-labelledby</code>)  du champ de formulaire</li>
+	<li>Des suggestions de saisie sont disponibles dans un passage de texte lié par la propriété ARIA <code>aria-describedby</code></li>
   </ul>
 </li>
 <li> Test 11.14.5 : Chaque suggestion  qui utilise la propriété ARIA 
-aria-label doit être accompagnée d'une suggestion  visuelle équivalente 
+<code>aria-label</code> doit être accompagnée d'une suggestion  visuelle équivalente 
 explicite, cette règle est-elle respectée ?</li>
 <li>Test 11.14.6 : Chaque suggestion qui utilise un passage de texte lié
- par la propriété ARIA aria-describedby vérifie-t-elle ces conditions ?
+ par la propriété ARIA <code>aria-describedby</code> vérifie-t-elle ces conditions ?
   <ul class="ssTests">
     <li>Le passage de texte est identifié via un attribut Id</li>
 	<li>La valeur de l'attribut Id est unique</li>
-	<li>La valeur de la propriété ARIA aria-describedby est égale à la valeur de l'attribut Id</li>
+	<li>La valeur de la propriété ARIA <code>aria-describedby</code> est égale à la valeur de l'attribut Id</li>
   </ul>
 </li>
 </ul>
