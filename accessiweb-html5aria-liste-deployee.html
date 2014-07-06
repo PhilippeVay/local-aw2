@@ -222,14 +222,14 @@ else if(window.attachEvent) { // win/ie
 <h3 id="crit-1-1">Critère 1.1 [A] Chaque image a-t-elle une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mAltTexteImg">alternative textuelle</a> ?</h3>
 
 <ul class="tests">
-		<li id="test-1-1-1">Test 1.1.1 : Chaque image (élément img) a-t-elle un attribut alt ?</li>
-		<li id="test-1-1-2">Test 1.1.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZone">zone</a> (élément area) d'une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a> a-t-elle un attribut alt ?</li>
+		<li id="test-1-1-1">Test 1.1.1 : Chaque image (élément <code>img</code>) a-t-elle un attribut <code>alt</code> ?</li>
+		<li id="test-1-1-2">Test 1.1.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZone">zone</a> (élément <code>area</code>) d'une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a> a-t-elle un attribut <code>alt</code> ?</li>
 
-		<li id="test-1-1-3">Test 1.1.3 : Chaque bouton de formulaire (élément input avec l'attribut type="image") a-t-il un attribut alt ?</li>
-		<li id="test-1-1-4">Test 1.1.4 : Chaque image vectorielle (élément svg)  vérifie-telle une de ces conditions ?
+		<li id="test-1-1-3">Test 1.1.3 : Chaque bouton de formulaire (élément <code>input</code> avec l'attribut <code>type="image"</code>) a-t-il un attribut <code>alt</code> ?</li>
+		<li id="test-1-1-4">Test 1.1.4 : Chaque image vectorielle (élément <code>svg</code>)  vérifie-telle une de ces conditions ?
 		<ul class="ssTests">
-		 <li>L'élément svg possède un attribut aria-label</li>
-		 <li>Un élément desc est présent</li>
+		 <li>L'élément <code>svg</code> possède un attribut <code>aria-label</code></li>
+		 <li>Un élément <code>desc</code> est présent</li>
 		</ul>
 		</li>
  </ul>
@@ -248,16 +248,16 @@ else if(window.attachEvent) { // win/ie
 
 <ul class="tests">
 
-		<li id="test-1-2-1">Test 1.2.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgDeco">image de décoration</a>  sans <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLegendeImage">légende</a> (élément img) et ayant un attribut alt vérifie-t-elle ces conditions :
+		<li id="test-1-2-1">Test 1.2.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgDeco">image de décoration</a>  sans <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLegendeImage">légende</a> (élément <code>img</code>) et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions :
 		  <ul class="ssTests"> 
-		     <li>le contenu de l'attribut alt est vide (alt="")</li>
-			 <li>l'image de décoration ne possède pas d'attribut title</li>
+		     <li>le contenu de l'attribut <code>alt</code> est vide (<code>alt=""</code>)</li>
+			 <li>l'image de décoration ne possède pas d'attribut <code>title</code></li>
 		  </ul>
 			 </li>
-    <li id="test-1-2-2">Test 1.2.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneNonCliquable">zone non cliquable</a> (élément area sans attribut href),  non porteuse d'information et ayant un attribut alt vérifie-t-elle ces conditions ? :
+    <li id="test-1-2-2">Test 1.2.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneNonCliquable">zone non cliquable</a> (élément <code>area</code> sans attribut href),  non porteuse d'information et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions ? :
 	   <ul class="ssTests">
-	    <li>le contenu de l'attribut alt est-vide (alt="")</li>
-		<li>la zone cliquable ne possède pas d'attribut title</li>
+	    <li>le contenu de l'attribut <code>alt</code> est-vide (<code>alt=""</code>)</li>
+		<li>la zone cliquable ne possède pas d'attribut <code>title</code></li>
 	   </ul>
 	   </li>
 
@@ -272,8 +272,8 @@ alternative vérifie-t-elle ces conditions ?
 		    <li>L'élément svg ou l'un de ses enfants est dépourvu de role, 
 propriété ou état ARIA visant à labelliser l'image vectorielle 
 (aria-label, aria-describedby, aria-labelledby par exemple).</li>
-			<li>Les éléments title et desc sont absents ou vides</li>
-			<li>L'élément svg ou l'un de ses enfants est dépourvu d'attribut title</li>
+			<li>Les éléments <code>title</code> et desc sont absents ou vides</li>
+			<li>L'élément svg ou l'un de ses enfants est dépourvu d'attribut <code>title</code></li>
 		  </ul>
 		  </li>
 
@@ -295,21 +295,21 @@ est-elle respectée ?</li>
 <h3 id="crit-1-3">Critère 1.3 [A] Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgInfo">image porteuse d'information</a> ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mAltTexteImg">alternative textuelle</a>, cette alternative est-elle pertinente (hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?</h3>
 
 <ul class="tests">
- <li id="test-1-3-1">Test 1.3.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgInfo">image porteuse d'information</a> (élément img) ayant un attribut alt vérifie-t-elle ces conditions (hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?
+ <li id="test-1-3-1">Test 1.3.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgInfo">image porteuse d'information</a> (élément <code>img</code>) ayant un attribut <code>alt</code> vérifie-t-elle ces conditions (hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?
    <ul class="ssTests">
-     <li>Le contenu de l'attribut alt est pertinent</li>
-	 <li>S'il est présent le contenu de l'attribut title est identique au contenu de l'attribut alt</li>
+     <li>Le contenu de l'attribut <code>alt</code> est pertinent</li>
+	 <li>S'il est présent le contenu de l'attribut <code>title</code> est identique au contenu de l'attribut <code>alt</code></li>
    </ul>
  </li>
- <li id="test-1-3-2">Test 1.3.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZone">zone</a> (élément area) d'une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a>, porteuse d'information et ayant un attribut alt, vérifie-t-elle ces conditions (hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?
+ <li id="test-1-3-2">Test 1.3.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZone">zone</a> (élément area) d'une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a>, porteuse d'information et ayant un attribut <code>alt</code>, vérifie-t-elle ces conditions (hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?
    <ul class="ssTests">
-   <li>Le contenu de l'attribut alt est pertinent</li>
-   <li>S'il est présent le contenu de l'attribut title est identique au contenu de l'attribut alt</li>
+   <li>Le contenu de l'attribut <code>alt</code> est pertinent</li>
+   <li>S'il est présent le contenu de l'attribut <code>title</code> est identique au contenu de l'attribut <code>alt</code></li>
    </ul>
  </li>
 
  <li id="test-1-3-3">Test 1.3.3 : Pour chaque bouton associé à une image
- (élément input avec l'attribut type="image") ayant un attribut alt, le 
+ (élément input avec l'attribut type="image") ayant un attribut <code>alt</code>, le 
 contenu de cet attribut est-il pertinent(hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#CP1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?</li>
  <li id="test-1-3-4">Test 1.3.4 :  Chaque image objet (élément object 
 avec l'attribut type="image/...") porteuse d'information vérifie-t-elle 
@@ -338,12 +338,12 @@ alternative pertinente.</li>
 d'information (élément svg) et possédant une alternative vérifie-t-elle 
 une de  ces conditions (hors <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>) ?
    <ul class="ssTests">
-     <li>L'élément svg possède un attribut aria-label dont le contenu est pertinent et identique à l'attribut title s'il est présent</li>
+     <li>L'élément svg possède un attribut aria-label dont le contenu est pertinent et identique à l'attribut <code>title</code> s'il est présent</li>
 	 <li>L'élément svg possède un élément desc dont le contenu est 
-pertinent et identique à l'attribut title de l'élément svg s'il est 
+pertinent et identique à l'attribut <code>title</code> de l'élément svg s'il est 
 présent</li>
 	 <li>Un lien adjacent permet d'accéder à une alternative dont le 
-contenu est pertinent et identique à l'attribut title de l'élément svg 
+contenu est pertinent et identique à l'attribut <code>title</code> de l'élément svg 
 s'il est présent</li>
    </ul>
  </li>
@@ -376,24 +376,24 @@ textuelle est-elle courte et concise (hors <a href="index.php/glossaire-du-refer
 <h3 id="crit-1-4">Critère 1.4 [A] Pour chaque image utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>, ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mAltTexteImg">alternative textuelle</a>, cette alternative permet-elle d'identifier la nature et la fonction de l'image ?</h3>
 
 <ul class="tests">
-		<li id="test-1-4-1">Test 1.4.1 : Pour chaque image (élément img) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>,  ayant un attribut alt, vérifie-t-elle ces conditions ?
+		<li id="test-1-4-1">Test 1.4.1 : Pour chaque image (élément <code>img</code>) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>,  ayant un attribut alt, vérifie-t-elle ces conditions ?
 		  <ul class="ssTests">
-		    <li>le contenu de l'attribut alt permet d'identifier la nature et la fonction de l'image</li>
-			<li>s'il est présent le contenu de l'attribut title est identique au contenu de l'attribut alt</li>
+		    <li>le contenu de l'attribut <code>alt</code> permet d'identifier la nature et la fonction de l'image</li>
+			<li>s'il est présent le contenu de l'attribut <code>title</code> est identique au contenu de l'attribut alt</li>
 		  </ul>
 		</li>
 
-		<li id="test-1-4-2">Test 1.4.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZone">zone</a> (élément area) d'une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a>, utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>, et ayant un attribut alt vérifie-t-elle ces conditions ?
+		<li id="test-1-4-2">Test 1.4.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZone">zone</a> (élément area) d'une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a>, utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>, et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions ?
 		  <ul class="ssTests">
-		    <li>le contenu de l'attribut alt permet d'identifier la nature et la fonction de la zone</li>
-			<li>s'il est présent le contenu de l'attribut title est identique au contenu de l'attribut alt</li>
+		    <li>le contenu de l'attribut <code>alt</code> permet d'identifier la nature et la fonction de la zone</li>
+			<li>s'il est présent le contenu de l'attribut <code>title</code> est identique au contenu de l'attribut alt</li>
 		  </ul>
 		</li>
 
-		<li id="test-1-4-3">Test 1.4.3 : Chaque bouton associé à une image (élément input avec l'attribut type="image") utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>, ayant un attribut alt vérifie-t-il ces conditions ?
+		<li id="test-1-4-3">Test 1.4.3 : Chaque bouton associé à une image (élément input avec l'attribut type="image") utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgTest">image-test</a>, ayant un attribut <code>alt</code> vérifie-t-il ces conditions ?
 		  <ul class="ssTests">
-		  <li>le contenu de l'attribut alt permet d'identifier la nature et la fonction du bouton</li>
-		  <li>s'il est présent le contenu de l'attribut title est identique au contenu de l'attribut alt</li>
+		  <li>le contenu de l'attribut <code>alt</code> permet d'identifier la nature et la fonction du bouton</li>
+		  <li>s'il est présent le contenu de l'attribut <code>title</code> est identique au contenu de l'attribut alt</li>
 		  </ul>
 		</li>
 
@@ -405,10 +405,10 @@ textuelle est-elle courte et concise (hors <a href="index.php/glossaire-du-refer
 		  <ul class="ssTests">
 		    <li>l'alternative textuelle  implémentée via l'attribut aria-label
  permet d'identifier la nature et la fonction de l'image et est 
-identique à l'attribut title s'il est présent</li>
+identique à l'attribut <code>title</code> s'il est présent</li>
 			<li>l'alternative textuelle  implémentée via l'élément desc  permet 
 d'identifier la nature et la fonction de l'image et est identique à 
-l'attribut title de l'élément svg s'il est présent</li>
+l'attribut <code>title</code> de l'élément svg s'il est présent</li>
 		  </ul>
 		</li>
         <li id="test-1-4-7">Test 1.4.7 : Pour chaque image vectorielle (élément svg)   utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte"></a><a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mRestitutionCorrecte">correctement restitué</a>e par les technologies d'assistance ?</li>
@@ -428,7 +428,7 @@ textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
 
 <h3 id="crit-1-5">Critère 1.5 [A] Pour chaque image utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a>, une solution d'accès alternatif au contenu ou à la fonction du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> est-elle présente ?</h3>
 <ul class="tests">
-		<li id="test-1-5-1">Test 1.5.1 : Chaque image (éléments img, area, applet, object, embed, svg, canvas) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> vérifie-t-elle une de ces conditions ?
+		<li id="test-1-5-1">Test 1.5.1 : Chaque image (éléments <code>img</code>, area, applet, object, embed, svg, canvas) utilisée comme <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> vérifie-t-elle une de ces conditions ?
 				<ul class="ssTests">
 
 					<li>Il existe  une autre forme de <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mcaptcha">CAPTCHA</a> non graphique, au moins</li>
@@ -464,12 +464,12 @@ textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
 
 <ul class="tests">
 
-<li id="test-1-6-1"> Test 1.6.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgInfo">image objet porteuse d'information</a> (élément img) qui nécessite une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a>, vérifie-t-elle une de ces conditions ?
+<li id="test-1-6-1"> Test 1.6.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgInfo">image objet porteuse d'information</a> (élément <code>img</code>) qui nécessite une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a>, vérifie-t-elle une de ces conditions ?
  <ul class="ssTests">
 
 			    <li>Il existe un attribut longdesc qui donne l'adresse (url) d'une page contenant la <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a></li>
 
-  				<li>Il existe un attribut alt contenant la référence à une description détaillée adjacente à l'image</li>
+  				<li>Il existe un attribut <code>alt</code> contenant la référence à une description détaillée adjacente à l'image</li>
 				<li>Il existe un lien adjacent (via une url ou une ancre) permettant d'accéder au contenu de la description détaillée</li>
 
 </ul>
@@ -496,7 +496,7 @@ textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
 <li id="test-1-6-4"> Test 1.6.4 : Chaque bouton de formulaire de type image (élément input avec l'attribut type="image", qui nécessite une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a>, vérifie-t-elle une de ces conditions  ?
   <ul class="ssTests">
 
-					<li>Il existe un attribut alt contenant la référence à une description détaillée adjacente à l'image</li>
+					<li>Il existe un attribut <code>alt</code> contenant la référence à une description détaillée adjacente à l'image</li>
 
   				    <li> Il existe un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienAdj">lien adjacent</a> (via une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mUrl">url</a> ou une ancre) permettant d'accéder au contenu de la <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a></li>
 
@@ -540,12 +540,12 @@ textuelle  permet-elle d'identifier la nature et la fonction de l'image ?</li>
 
 <ul class="tests">
 
-		<li id="test-1-7-1">Test 1.7.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgInfo">image porteuse d'information</a> (élément img ou input de type image) ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
+		<li id="test-1-7-1">Test 1.7.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgInfo">image porteuse d'information</a> (élément <code>img</code> ou input de type image) ayant une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
    <ul class="ssTests">
 
 					<li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> via l'adresse référencée dans l'attribut longdesc est pertinente</li>
 
-          <li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> dans la page et signalée dans l'attribut alt est pertinente</li>
+          <li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> dans la page et signalée dans l'attribut <code>alt</code> est pertinente</li>
           <li> La <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mDescDetaillee">description détaillée</a> via un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienAdj">lien adjacent</a> est pertinente</li>
 
 </ul>
@@ -605,9 +605,9 @@ canvas) ayant une description détaillée entre &lt;canvas&gt; et
 
 <h3 id="crit-1-8">Critère 1.8 [AA] Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgText">image texte</a>, en l'absence d'un mécanisme de remplacement, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</h3>
 <ul class="tests">
-<li id="test-1-8-1"> Test 1.8.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgText">image texte</a> (élément img), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
+<li id="test-1-8-1"> Test 1.8.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgText">image texte</a> (élément <code>img</code>), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
 
-<li id="test-1-8-2"> Test 1.8.2 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a> (élément img ou object avec l'attribut usemap), chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneTexte">zone texte</a> (élément area), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
+<li id="test-1-8-2"> Test 1.8.2 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a> (élément <code>img</code> ou object avec l'attribut usemap), chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneTexte">zone texte</a> (élément area), en l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
 <li id="test-1-8-3"> Test 1.8.3 : Pour chaque élément form, chacun de ses
  boutons "image texte" (élément input avec l'attribut type="image"), en 
 l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMecaRempl">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit1-8" title="Cas particuliers pour le critère 1.8">hors cas particuliers</a>) ?</li>
@@ -632,9 +632,9 @@ l'absence d'un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.
 <h3 id="crit-1-9">Critère 1.9 [AAA] Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgText">image texte</a> doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</h3>
 
 <ul class="tests">
-<li id="test-1-9-1"> Test 1.9.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgText">image texte</a> (élément img) doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</li>
+<li id="test-1-9-1"> Test 1.9.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgText">image texte</a> (élément <code>img</code>) doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</li>
 
-<li id="test-1-9-2"> Test 1.9.2 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a> (élément img ou object avec l'attribut usemap), chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneTexte">zone texte</a> (élément area) doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</li>
+<li id="test-1-9-2"> Test 1.9.2 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mImgReactive">image réactive</a> (élément <code>img</code> ou object avec l'attribut usemap), chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneTexte">zone texte</a> (élément area) doit si possible être remplacée par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTexteStyle">texte stylé</a>. Cette règle est-elle respectée (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit19-" title="Cas particuliers pour le critère 1.9">hors cas particuliers</a>) ?</li>
 
 <li id="test-1-9-3"> Test 1.9.3 : Pour chaque élément form, chacun de ses
  boutons "image texte" (élément input avec l'attribut type="image") doit 
@@ -659,14 +659,14 @@ par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTe
  </ul>
  <h3 id="crit-1-10">Critère 1.10 [A] Chaque légende d'image est-elle, si nécessaire, correctement reliée à l'image correspondante ?</h3>
  <ul class="tests">
- <li id="test-1-10-1">Test 1.10.1 : Chaque image légendée (élément img ou
+ <li id="test-1-10-1">Test 1.10.1 : Chaque image légendée (élément <code>img</code> ou
  input de type image associée à une légende adjacente) vérifie-telle, si
  nécessaire, ces conditions ?
    <ul class="ssTests">
-     <li>L'image (élément img) et sa légende sont contenues dans un élément figure</li>
+     <li>L'image (élément <code>img</code>) et sa légende sont contenues dans un élément figure</li>
 	 <li>L'élément figure possède un attribut role="group"</li>
-	 <li>Le contenu de l'attribut alt de l'image contient une référence à la légende adjacente</li>
-	 <li>L'attribut title de l'image s'il est  présent, est strictement identique au contenu de l'attribut alt</li>
+	 <li>Le contenu de l'attribut <code>alt</code> de l'image contient une référence à la légende adjacente</li>
+	 <li>L'attribut <code>title</code> de l'image s'il est  présent, est strictement identique au contenu de l'attribut alt</li>
    </ul>
  </li>
  <li id="test-1-10-2">Test 1.10.2 : Chaque image objet (élément object 
@@ -683,8 +683,8 @@ nécessaire, ces conditions ?
    <ul class="ssTests">
      <li>L'image embarquée (élément embed) et sa légende sont contenues dans un élément figure</li>
      <li>L'élément figure possède un attribut role="group"</li>
-     <li>Le contenu de l'attribut alt de l'image contient une référence à la légende adjacente</li>
-     <li>L'attribut title de l'image s'il est  présent, est strictement identique au contenu de l'attribut alt</li>
+     <li>Le contenu de l'attribut <code>alt</code> de l'image contient une référence à la légende adjacente</li>
+     <li>L'attribut <code>title</code> de l'image s'il est  présent, est strictement identique au contenu de l'attribut alt</li>
   </ul>
  </li><li id="test-1-10-4">Test 1.10.4 : Chaque image vectorielle 
 légendée (élément svg associé à une légende adjacente) vérifie-telle, si
@@ -693,7 +693,7 @@ légendée (élément svg associé à une légende adjacente) vérifie-telle, si
     <li>L'image (élément svg) et sa légende sont contenues dans un élément figure</li>
     <li>L'élément figure possède un attribut role="group"</li>
     <li>Le contenu de l'attribut aria-label ou de l'élément desc de l'image vectorielle contient une référence à la légende adjacente</li>
-    <li>L'attribut title de l'image vectorielle (élément svg) s'il est  
+    <li>L'attribut <code>title</code> de l'image vectorielle (élément svg) s'il est  
 présent, est strictement identique au contenu de l'attribut aria-label 
 ou de l'élément desc utilisé comme alternative.</li>
   </ul>
@@ -746,7 +746,7 @@ ou de l'élément desc utilisé comme alternative.</li>
 
 <h3 id="crit-2-1">Critère 2.1 [A] Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre en ligne</a> a-t-il un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreCadre">titre de cadre</a>  ?</h3>
 <ul class="tests">
-		<li id="test-2-1-1">Test 2.1.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément iframe) a-t-il un attribut title ?</li>
+		<li id="test-2-1-1">Test 2.1.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément iframe) a-t-il un attribut <code>title</code> ?</li>
 </ul>
 <h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
  <ul class="correspondance">
@@ -758,7 +758,7 @@ ou de l'élément desc utilisé comme alternative.</li>
 
 <h3 id="crit-2-2">Critère 2.2 [A] Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre en ligne</a> ayant un titre de cadre, ce <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreCadre">titre de cadre</a> est-il pertinent ?</h3>
 <ul class="tests">
-		<li id="test-2-2-1"> Test 2.2.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément iframe) ayant un attribut title, le contenu de cet attribut est-il pertinent ?</li>
+		<li id="test-2-2-1"> Test 2.2.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément iframe) ayant un attribut <code>title</code>, le contenu de cet attribut est-il pertinent ?</li>
 
 		
 </ul>
@@ -1765,7 +1765,7 @@ Doubler avec des liens ou un formulaire de navigation les zones réactive d'une 
 	</ul>
   </li>
 
-		<li id="test-6-1-2"> Test 6.1.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienImage">lien image</a> (contenu de l'attribut alt ou texte entre &lt;object&gt; et &lt;/object&gt;) vérifie-t-il une de ces conditions (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>) ?
+		<li id="test-6-1-2"> Test 6.1.2 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienImage">lien image</a> (contenu de l'attribut <code>alt</code> ou texte entre &lt;object&gt; et &lt;/object&gt;) vérifie-t-il une de ces conditions (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>) ?
 
 <ul class="ssTests">
 	<li>L'<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mIntituleLien">intitulé de lien</a> seul permet d'en comprendre la fonction et la destination</li>
@@ -1773,7 +1773,7 @@ Doubler avec des liens ou un formulaire de navigation les zones réactive d'une 
 	</ul>
 	</li>
 
-		<li id="test-6-1-3"> Test 6.1.3 : Chaque lien de type <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneCliquable">zone cliquable</a> (contenu de l'attribut alt d'un élément area) vérifie-t-il une de ces conditions (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>) ?
+		<li id="test-6-1-3"> Test 6.1.3 : Chaque lien de type <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneCliquable">zone cliquable</a> (contenu de l'attribut <code>alt</code> d'un élément area) vérifie-t-il une de ces conditions (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>) ?
 
 
 <ul class="ssTests">
@@ -1801,13 +1801,13 @@ Doubler avec des liens ou un formulaire de navigation les zones réactive d'une 
 <h3 id="crit-6-2">Critère 6.2  [A] Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLien">lien</a> ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a>, celui-ci est-il pertinent ?</h3>
 
 <ul class="tests">
-		<li id="test-6-2-1"> Test 6.2.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienTexte">lien texte</a> ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut title), le contenu de cet attribut est-il pertinent ? </li>
+		<li id="test-6-2-1"> Test 6.2.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienTexte">lien texte</a> ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut <code>title</code>), le contenu de cet attribut est-il pertinent ? </li>
 
-		<li id="test-6-2-2"> Test 6.2.2 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienImage">lien image</a> ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut title), le contenu de cet attribut est-il pertinent ? </li>
+		<li id="test-6-2-2"> Test 6.2.2 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienImage">lien image</a> ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut <code>title</code>), le contenu de cet attribut est-il pertinent ? </li>
 
-		<li id="test-6-2-3"> Test 6.2.3 : pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneCliquable">zone cliquable</a> (élément area) ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut title), le contenu de cet attribut est-il pertinent ? </li>
+		<li id="test-6-2-3"> Test 6.2.3 : pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneCliquable">zone cliquable</a> (élément area) ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut <code>title</code>), le contenu de cet attribut est-il pertinent ? </li>
 
-		<li id="test-6-2-4"> Test 6.2.4 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienComposite">lien composite</a> ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut title), le contenu de cet attribut est-il pertinent ?
+		<li id="test-6-2-4"> Test 6.2.4 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienComposite">lien composite</a> ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreLien">titre de lien</a> (attribut <code>title</code>), le contenu de cet attribut est-il pertinent ?
  </li>
 
  </ul>
@@ -1830,7 +1830,7 @@ Doubler avec des liens ou un formulaire de navigation les zones réactive d'une 
 
 					<li>L'intitulé du lien est explicite hors contexte</li>
   				<li>Un mécanisme permet à l'utilisateur d'obtenir un intitulé de lien explicite hors contexte</li>
-  				<li>Le contenu du titre de lien (attribut title) est explicite hors contexte</li>
+  				<li>Le contenu du titre de lien (attribut <code>title</code>) est explicite hors contexte</li>
 
 	</ul>
 	</li>
@@ -1839,9 +1839,9 @@ Doubler avec des liens ou un formulaire de navigation les zones réactive d'une 
 		
 		
 
-		<li id="test-6-3-2"> Test 6.3.2 : Chaque intitulé de <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienImage">lien image</a> (contenu de l'attribut alt ou contenu entre &lt;object&gt;&lt;/object&gt;) est-il <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienHorsContexte">explicite hors contexte</a> (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.4">hors cas particulier</a>) ? </li>
+		<li id="test-6-3-2"> Test 6.3.2 : Chaque intitulé de <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienImage">lien image</a> (contenu de l'attribut <code>alt</code> ou contenu entre &lt;object&gt;&lt;/object&gt;) est-il <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienHorsContexte">explicite hors contexte</a> (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.4">hors cas particulier</a>) ? </li>
 
-		<li id="test-6-3-3"> Test 6.3.3 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mIntituleLien">intitulé de lien</a> de type <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneCliquable">zone cliquable</a> (contenu de l'attribut alt d'un élément area) est-il <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienHorsContexte">explicite hors contexte</a> (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.4">hors cas particulier</a>) ? </li>
+		<li id="test-6-3-3"> Test 6.3.3 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mIntituleLien">intitulé de lien</a> de type <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mZoneCliquable">zone cliquable</a> (contenu de l'attribut <code>alt</code> d'un élément area) est-il <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienHorsContexte">explicite hors contexte</a> (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.4">hors cas particulier</a>) ? </li>
 
 		<li id="test-6-3-4"> Test 6.3.4 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienComposite">lien composite</a> (contenu texte et de l'attribut alt) est-il <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienHorsContexte">explicite hors contexte</a> (<a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#cpCrit6-" title="Cas particuliers pour le critère 6.4">hors cas particuliers</a>) </li>
 
@@ -2215,7 +2215,7 @@ présentation, que les changements de langues et  de direction de sens de
 
 <h3 id="crit-8-5">Critère 8.5 [A] Chaque page Web a-t-elle un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitrePage">titre de page</a> ?</h3>
 <ul class="tests">
-		<li id="test-8-5-1"> Test 8.5.1 : Chaque page Web a-t-elle un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitrePage">titre de page</a> (élément title) ?</li>
+		<li id="test-8-5-1"> Test 8.5.1 : Chaque page Web a-t-elle un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitrePage">titre de page</a> (élément <code>title</code>) ?</li>
 
 </ul>
  <h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
@@ -2231,7 +2231,7 @@ présentation, que les changements de langues et  de direction de sens de
 
 <h3 id="crit-8-6">Critère 8.6 [A] Pour chaque page Web ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitrePage">titre de page</a>, ce titre est-il pertinent ?</h3>
 <ul class="tests">
-		<li id="test-8-6-1"> Test 8.6.1 : Pour chaque page Web ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitrePage">titre de page</a> (élément title), le contenu de cet élément est-il pertinent ?
+		<li id="test-8-6-1"> Test 8.6.1 : Pour chaque page Web ayant un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitrePage">titre de page</a> (élément <code>title</code>), le contenu de cet élément est-il pertinent ?
 
 </li>
 </ul>
@@ -2433,9 +2433,9 @@ signification ?</h3>
 		    <li>L'abréviation est accompagnée de sa signification sous forme d'un texte adjacent</li>
 			<li>L'abréviation est implémentée via un lien référençant une page ou
  un emplacement dans la page qui permet d'en connaître la signification</li>
-			<li>L'abréviation fait partie d'un lien possédant un attribut title qui permet d'en connaître la signification</li>
+			<li>L'abréviation fait partie d'un lien possédant un attribut <code>title</code> qui permet d'en connaître la signification</li>
 			<li>La signification de l'abréviation est présente dans un glossaire présent sur le site</li>
-			<li>L'abréviation est implémentée via un élément abbr possédant un title qui permet d'en connaître la signification</li>
+			<li>L'abréviation est implémentée via un élément abbr possédant un <code>title</code> qui permet d'en connaître la signification</li>
 		  </ul>
 		</li>
 
@@ -2951,7 +2951,7 @@ Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCh
 		<li id="test-11-1-1"> Test 11.1.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> vérifie-t-il une de ces conditions ?
   <ul class="ssTests">
 
-		  <li> Le champ de formulaire possède un attribut title</li>
+		  <li> Le champ de formulaire possède un attribut <code>title</code></li>
           <li> Une <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> (élément label) est associée au champ de formulaire</li>
 	      <li>Le <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> possède une propriété aria-label</li>
 		  <li>Le <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> possède un attribut aria-labelledby référençant un passage de texte identifié</li>
@@ -2994,7 +2994,7 @@ Chaque étiquette associée à un <a href="index.php/glossaire-du-referentiel-ac
 <ul class="tests">
 
 		<li id="test-11-2-1"> Test 11.2.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> (élément label) permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel elle est associée ?</li>
-		<li id="test-11-2-2"> Test 11.2.2 : Chaque attribut title permet-il de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ?
+		<li id="test-11-2-2"> Test 11.2.2 : Chaque attribut <code>title</code> permet-il de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ?
         </li><li id="test-11-2-3"> Test 11.2.3 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> implémentée via la propriété ARIA aria-label permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ? </li>
 		<li id="test-11-2-4"> Test 11.2.4 :  Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mEtiquette">étiquette</a> implémentée via la propriété ARIA aria-labelledby permet-elle de connaître la fonction exacte du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChpSaisie">champ de formulaire</a> auquel il est associé ? </li>
 
@@ -3140,7 +3140,7 @@ l'attribut label est-il pertinent ?</li>
 		  <li> Le contenu de l'attribut value des boutons de formulaire de type submit, reset ou button est pertinent</li>
 
           <li> Le contenu de l'élément &lt;button&gt; est  pertinent</li>
-          <li> Le contenu de l'attribut title est pertinent</li>
+          <li> Le contenu de l'attribut <code>title</code> est pertinent</li>
 		  <li>Le contenu de la propriété ARIA aria-label est pertinent</li>
    </ul>
 
@@ -3177,7 +3177,7 @@ l'attribut label est-il pertinent ?</li>
 			<li>L'indication de champ obligatoire est indiquée via un attribut required</li>
 			<li>L'indication de champ obligatoire est indiquée via la propriété ARIA aria-required</li>
 			<li>L'indication de champ obligatoire est indiquée dans l'étiquette 
-(élément label, attribut title, propriété aria-label, passage de texte 
+(élément label, attribut <code>title</code>, propriété aria-label, passage de texte 
 lié via la propriété aria-labelledby)  du champ de formulaire</li>
 			<li>L'indication de champ obligatoire est indiquée par un passage de texte lié par la propriété ARIA aria-describedby</li>
 		  </ul>
@@ -3199,7 +3199,7 @@ aria-describedby vérifie-t-elle ces conditions ?
 <li id="test-11-10-4"> Test 11.10.4 : Pour chaque formulaire, les erreurs de saisie vérifient-elle une de ces conditions ?
   <ul class="ssTests">
     <li>L'erreur de saisie est indiquée dans l'étiquette (élément label, 
-attribut title, propriété ARIA aria-label, passage de texte lié via la 
+attribut <code>title</code>, propriété ARIA aria-label, passage de texte lié via la 
 propriété ARIA aria-labelledby)  du champ de formulaire</li>
 	<li>L'erreur de saisie est indiquée par un passage de texte avant le champ de formulaire</li>
 	<li>Le champ de formulaire possède un type qui produit de manière automatique un message d'erreur de saisie</li>
@@ -3221,7 +3221,7 @@ vérifie-t-elle ces conditions ?
 <li id="test-11-10-7"> Test 11.10.7 : Pour chaque formulaire, chaque champ obligatoire vérifie-t-il un de ces conditions ?
   <ul class="ssTests">
     <li>Le  type de donnée et/ou de format  est indiqué, si nécessaire, 
-dans l'étiquette (élément label, attribut title, propriété ARIA 
+dans l'étiquette (élément label, attribut <code>title</code>, propriété ARIA 
 aria-label, texte lié via la propriété ARIA aria-labelledby)  du champ 
 de formulaire</li>
 	<li>Le  type de donnée et/ou de format  est indiqué, si nécessaire, par un passage de texte avant le champ de formulaire</li>
@@ -3348,7 +3348,7 @@ Pour chaque formulaire, toutes les données peuvent-elles être modifiées, mise
 						<li>Il existe des indications avant le formulaire</li>
 						<li>Il existe des indications avant les champs de formulaire</li>
 						<li>Il existe des indications dans l'étiquette (élément label, 
-attribut title, propriété aria-label, passage de texte lié via la 
+attribut <code>title</code>, propriété aria-label, passage de texte lié via la 
 propriété aria-labelledby)  du champ de formulaire</li>
 						<li> Il existe des indications dans un passage de texte lié par la propriété ARIA aria-describedby</li>
 						<li>Un assistant est disponible</li>
@@ -3371,7 +3371,7 @@ visuelle équivalente explicite, cette règle est-elle respectée ?
     <li>Un correcteur orthographique est disponible</li>
 	<li>Des suggestions de saisie sont disponibles avant le champ du formulaire</li>
 	<li>Des suggestions de saisie sont disponibles dans l'étiquette 
-((élément label, attribut title, propriété aria-label, passage de texte 
+((élément label, attribut <code>title</code>, propriété aria-label, passage de texte 
 lié via la propriété aria-labelledby)  du champ de formulaire</li>
 	<li>Des suggestions de saisie sont disponibles dans un passage de texte lié par la propriété ARIA aria-describedby</li>
   </ul>
@@ -4069,7 +4069,7 @@ contenu cryptique (art ascii, émoticon, syntaxe cryptique) vérifie-t-il
 une de ces conditions ?
  <ul class="ssTests">
 
-					<li> Un attribut title est disponible</li>
+					<li> Un attribut <code>title</code> est disponible</li>
 
           <li> Une définition est donnée par le contexte adjacent</li>
 </ul>
@@ -4094,7 +4094,7 @@ alternative, cette alternative est-elle pertinente ?</h3>
 contenu cryptique (art ascii, émoticon, syntaxe cryptique) vérifie-t-il 
 une de ces conditions ?
  <ul class="ssTests">
-					<li> Le contenu de l'attribut title est pertinent</li>
+					<li> Le contenu de l'attribut <code>title</code> est pertinent</li>
 
  					<li> La définition donnée par le contexte adjacent est pertinente</li>
 </ul>
@@ -4171,7 +4171,7 @@ de lecture du premier cycle de l'enseignement secondaire sont présents</li>
 <h3 id="crit-13-15">Critère 13.15 [A] Dans chaque page Web, les <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mChangeLumi">changements brusques de luminosité ou les effets de flash</a> sont-ils correctement utilisés ?</h3>
 <ul class="tests">
 				<li id="test-13-15-1">Test 13.15.1 : Dans chaque page Web, chaque 
-image animée (élément img ou élément object) qui provoque un changement 
+image animée (élément <code>img</code> ou élément object) qui provoque un changement 
 brusque de luminosité ou un effet de flash vérifie-t-elle une de ces 
 conditions ?
   			<ul class="ssTests">
@@ -4226,7 +4226,7 @@ applet java qui provoque un changement brusque de luminosité ou un effet
 
 		<li id="test-13-16-1">Test 13.16.1 : Dans chaque page Web, chaque 
 changement brusque de luminosité ou un effet de flash provoqué par une 
-image animée (élément img ou élément object)  a-t-il une fréquence 
+image animée (élément <code>img</code> ou élément object)  a-t-il une fréquence 
 inférieure ou égale à 3 par seconde ?</li>
 
 		<li id="test-13-16-2"> Test 13.16.2 : Dans chaque page Web chaque changement brusque de luminosité ou un effet de flash provoqué par un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mScript">script</a> a-t-il une fréquence inférieure ou égale à 3 par seconde ?</li>
@@ -4424,8 +4424,8 @@ d'un service Web au RGAA 2.2</li>
  ou Or) et d'un intitulé (par exemple : "Chaque image a-t-elle une 
 alternative textuelle ?"). Chaque critère AccessiWeb est associé à un ou
  plusieurs tests composé d'un numéro (par exemple "Test 1.1.1") et d'un 
-intitulé (par exemple "Chaque image (élément img) a-t-elle un attribut 
-alt ?".</p>
+intitulé (par exemple "Chaque image (élément <code>img</code>) a-t-elle un attribut 
+<code>alt</code> ?".</p>
 			<p>Chaque critère AccessiWeb affiche une correspondance vers un ou 
 plusieurs critères de succès des WCAG 2.0, vers une ou plusieurs 
 techniques suffisantes des WCAG 2.0 et vers un ou plusieurs tests du 
