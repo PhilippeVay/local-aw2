@@ -668,7 +668,7 @@ par du <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTe
  nécessaire, ces conditions ?
    <ul class="ssTests">
      <li>L'image (élément <code>img</code>) et sa légende sont contenues dans un élément <code>figure</code></li>
-	 <li>L'élément <code>figure</code> possède un attribut role="group"</li>
+	 <li>L'élément <code>figure</code> possède un attribut <code>role="group"</code></li>
 	 <li>Le contenu de l'attribut <code>alt</code> de l'image contient une référence à la légende adjacente</li>
 	 <li>L'attribut <code>title</code> de l'image s'il est  présent, est strictement identique au contenu de l'attribut <code>alt</code></li>
    </ul>
@@ -678,7 +678,7 @@ avec l'attribut <code>type="image/..."</code> associée à une légende adjacent
 vérifie-telle, si nécessaire, ces conditions ?
    <ul class="ssTests">
      <li>L'image (élément <code>object</code>) et sa légende sont contenues dans un élément <code>figure</code></li>
-	 <li>L'élément <code>figure</code> possède un attribut role="group"</li>
+	 <li>L'élément <code>figure</code> possède un attribut <code>role="group"</code></li>
    </ul>
 </li>
  <li id="test-1-10-3">Test 1.10.3 : Chaque image embarquée légendée 
@@ -686,7 +686,7 @@ vérifie-telle, si nécessaire, ces conditions ?
 nécessaire, ces conditions ?
    <ul class="ssTests">
      <li>L'image embarquée (élément <code>embed</code>) et sa légende sont contenues dans un élément <code>figure</code></li>
-     <li>L'élément <code>figure</code> possède un attribut role="group"</li>
+     <li>L'élément <code>figure</code> possède un attribut <code>role="group"</code></li>
      <li>Le contenu de l'attribut <code>alt</code> de l'image contient une référence à la légende adjacente</li>
      <li>L'attribut <code>title</code> de l'image s'il est  présent, est strictement identique au contenu de l'attribut <code>alt</code></li>
   </ul>
@@ -695,7 +695,7 @@ légendée (élément <code>svg</code> associé à une légende adjacente) véri
  nécessaire, ces conditions ?
   <ul class="ssTests">
     <li>L'image (élément <code>svg</code>) et sa légende sont contenues dans un élément <code>figure</code></li>
-    <li>L'élément <code>figure</code> possède un attribut role="group"</li>
+    <li>L'élément <code>figure</code> possède un attribut <code>role="group"</code></li>
     <li>Le contenu de l'attribut <code>aria-label</code> ou de l'élément <code>desc</code> de l'image vectorielle contient une référence à la légende adjacente</li>
     <li>L'attribut <code>title</code> de l'image vectorielle (élément <code>svg</code>) s'il est  
 présent, est strictement identique au contenu de l'attribut <code>aria-label</code> 
@@ -707,7 +707,7 @@ ou de l'élément <code>desc</code> utilisé comme alternative.</li>
  ces conditions ?
    <ul class="ssTests">
      <li>L'image (élément <code>canvas</code>) et sa légende sont contenues dans un élément <code>figure</code></li>
-	 <li>L'élément <code>figure</code> possède un attribut role="group"</li>
+	 <li>L'élément <code>figure</code> possède un attribut <code>role="group"</code></li>
 	 <li>Le contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>  de l'image bitmap contient une référence à la légende adjacente</li>
    </ul>
  </li>
@@ -750,7 +750,7 @@ ou de l'élément <code>desc</code> utilisé comme alternative.</li>
 
 <h3 id="crit-2-1">Critère 2.1 [A] Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre en ligne</a> a-t-il un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreCadre">titre de cadre</a>  ?</h3>
 <ul class="tests">
-		<li id="test-2-1-1">Test 2.1.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément iframe) a-t-il un attribut <code>title</code> ?</li>
+		<li id="test-2-1-1">Test 2.1.1 : Chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément <code>iframe</code>) a-t-il un attribut <code>title</code> ?</li>
 </ul>
 <h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
  <ul class="correspondance">
@@ -762,7 +762,7 @@ ou de l'élément <code>desc</code> utilisé comme alternative.</li>
 
 <h3 id="crit-2-2">Critère 2.2 [A] Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre en ligne</a> ayant un titre de cadre, ce <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mTitreCadre">titre de cadre</a> est-il pertinent ?</h3>
 <ul class="tests">
-		<li id="test-2-2-1"> Test 2.2.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément iframe) ayant un attribut <code>title</code>, le contenu de cet attribut est-il pertinent ?</li>
+		<li id="test-2-2-1"> Test 2.2.1 : Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mCadreEnLigne">cadre</a> (élément <code>iframe</code>) ayant un attribut <code>title</code>, le contenu de cet attribut est-il pertinent ?</li>
 
 		
 </ul>
@@ -1055,7 +1055,7 @@ Rendre possible le  <a href="index.php/glossaire-du-referentiel-accessiweb-html5
 						<li>Il existe une version alternative possédant des <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mSsTitreSynchro">sous-titres synchronisés</a> accessible via un <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mLienAdj">lien adjacent</a> (une url ou une ancre)</li>
 				</ul>
 </li>
-   <li> Test 4.3.2: Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMediaTemp">média temporel</a> synchronisé pré-enregistré  possédant des <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mSsTitreSynchro">sous-titres synchronisés</a> diffusés via un élément track, l'élément track  possède-t-il un attribut kind="captions"</li>
+   <li> Test 4.3.2: Pour chaque <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mMediaTemp">média temporel</a> synchronisé pré-enregistré  possédant des <a href="index.php/glossaire-du-referentiel-accessiweb-html5aria.html#mSsTitreSynchro">sous-titres synchronisés</a> diffusés via un élément <code>track</code>, l'élément <code>track</code>  possède-t-il un attribut <code>kind="captions"</code></li>
 </ul>
 <h4>Correspondances <abbr>WCAG</abbr> 2.0 et <abbr>RGAA</abbr></h4>
 
